@@ -51,8 +51,8 @@ $slnpath = Resolve-Path ./client/Cloudmersive.APIClient.NET.Currency.sln
 
 # Packages.config
 
-(Get-Content '.\client\src\Cloudmersive.APIClient.NET.Validate\packages.config').replace('<package id="RestSharp" version="105.1.0" targetFramework="net45" developmentDependency="true" />', '<package id="RestSharp" version="106.6.10" targetFramework="net45" developmentDependency="true" />') | Set-Content '.\client\src\Cloudmersive.APIClient.NET.Validate\packages.config'
-(Get-Content '.\client\src\Cloudmersive.APIClient.NET.Validate\Client\ApiClient.cs').replace('request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentType);', 'request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentLength, param.Value.ContentType);') | Set-Content '.\client\src\Cloudmersive.APIClient.NET.Validate\Client\ApiClient.cs'
+(Get-Content '.\client\src\Cloudmersive.APIClient.NET.Currency\packages.config').replace('<package id="RestSharp" version="105.1.0" targetFramework="net45" developmentDependency="true" />', '<package id="RestSharp" version="106.6.10" targetFramework="net45" developmentDependency="true" />') | Set-Content '.\client\src\Cloudmersive.APIClient.NET.Currency\packages.config'
+(Get-Content '.\client\src\Cloudmersive.APIClient.NET.Currency\Client\ApiClient.cs').replace('request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentType);', 'request.AddFile(param.Value.Name, param.Value.Writer, param.Value.FileName, param.Value.ContentLength, param.Value.ContentType);') | Set-Content '.\client\src\Cloudmersive.APIClient.NET.Currency\Client\ApiClient.cs'
 
 
 
